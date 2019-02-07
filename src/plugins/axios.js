@@ -4,7 +4,8 @@ import router from '../routes/'
 import swal from 'sweetalert2'
 
 //Global Headers
-axios.defaults.baseURL = process.env.BASE_API_URL || 'http://192.168.1.7/izi-bazi.ud/api';
+console.log(process.env.VUE_APP_API_ENDPOINT)
+axios.defaults.baseURL = process.env.VUE_APP_API_ENDPOINT || 'http://192.168.1.7/izi-bazi.ud/api';
 
 
 //csrf-token

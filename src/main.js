@@ -11,7 +11,6 @@ const { config } = require('./config.js')
 Vue.config.productionTip = false
 window.config = {}
 window.config.appName = config.appName
-console.log(window.config.appName)
 new Vue({
 
 	router,

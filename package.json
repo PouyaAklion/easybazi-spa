@@ -8,10 +8,23 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap-v4-rtl": "^4.1.1-1",
+    "jquery": "^3.3.1",
+    "js-cookie": "^2.2.0",
+    "popper.js": "^1.14.7",
     "register-service-worker": "^1.5.2",
+    "sweetalert2": "^8.0.6",
+    "swiper": "^4.4.6",
+    "terser": "^3.14.1",
+    "v-click-outside": "^2.0.2",
+    "vform": "^1.0.0",
     "vue": "^2.5.22",
+    "vue-meta": "^1.5.8",
+    "vue-moment-jalaali": "^2.0.0",
     "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "vuex-router-sync": "^5.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.4.0",

@@ -1,6 +1,6 @@
 <template>
     <div class="basic-layout m-0 rtl">
-        <child/>
+        <the-child/>
     </div>
 </template>
 

@@ -9,7 +9,7 @@ Vue.use(Meta)
 Vue.use(Router)
 
 // The middleware for every page of the application.
-const globalMiddleware = ['locale', 'auth']
+const globalMiddleware = ['locale', 'check-auth']
 
 // Load middleware modules dynamically.
 const routeMiddleware = resolveMiddleware(
@@ -24,7 +24,7 @@ export default router
 
 function createRouter () {
     const router= new Router({
-				base: process.env.BASE_URL || '/',
+				base: '/',
         scrollBehavior,
         mode: 'history',
         routes
@@ -36,7 +36,7 @@ function createRouter () {
 }
 
 async function beforeEach (to,from,next){
-
+		// next({name:'home'})
     const components = await resolveComponents(
         router.getMatchedComponents({...to})
     )
@@ -50,15 +50,14 @@ async function beforeEach (to,from,next){
     }
 
     const middleware = getMiddleware(components)
-
     // Call each middleware.
-
+		// console.log(middleware,to,from)
     callMiddleware(middleware, to, from, (...args) => {
         // Set the application layout only if "next()" was called with no args.
         if (args.length === 0) {
             router.app.setLayout(components[0].layout || '')
         }
-
+				//console.log(...args)
         next(...args)
     })
 }
@@ -72,12 +71,12 @@ function callMiddleware (middleware, to, from, next) {
     const stack = middleware.reverse()
 
     const _next = (...args) => {
-        // Stop if "_next" was called with an argument or the stack is empty.
+				// Stop if "_next" was called with an argument or the stack is empty.
+				//console.log(args)
         if (args.length > 0 || stack.length === 0) {
             if (args.length > 0) {
-							// console.log(router.app.$loading);
                router.app.$loading.finish()
-            }
+						}
 
             return next(...args)
         }

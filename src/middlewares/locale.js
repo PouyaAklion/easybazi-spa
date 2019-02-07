@@ -3,6 +3,6 @@ import store from '../store/'
 
 export default async (to, from, next) => {
  // await loadMessages(store.getters['lang/locale'])
-
+	// console.log('locale')
   next()
 }
