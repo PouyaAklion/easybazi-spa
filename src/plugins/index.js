@@ -1,3 +1,3 @@
 import './axios'
-import 'bootstrap-v4-rtl/scss/bootstrap-rtl.scss'
+import './styles'
 import 'bootstrap-v4-rtl'

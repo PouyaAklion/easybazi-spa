@@ -1,0 +1,81 @@
+.btn-loading {
+  position: relative;
+  pointer-events: none;
+  color: transparent !important;
+
+  &:after {
+    animation: spinAround 500ms infinite linear;
+    border: 2px solid #dbdbdb;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    content: "";
+    display: block;
+    height: 1em;
+    width: 1em;
+    position: absolute;
+    left: calc(50% - (1em / 2));
+    top: calc(50% - (1em / 2));
+  }
+}
+
+@keyframes spinAround {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(359deg); }
+}
+
+
+.button-orange {
+  color: #fff;
+  background-color: #d65611;
+  border-color: #d65611;
+}
+
+.button-orange:hover {
+  color: #fff;
+  background-color: #ff6500;
+  border-color: #B45E13;
+}
+
+.button-orange:focus, .button-orange.focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 101, 0, 0.5);
+}
+
+.button-orange.disabled, .button-orange:disabled {
+  color: #fff;
+  background-color: #d65611;
+  border-color: #d65611;
+}
+
+.button-orange:not(:disabled):not(.disabled):active, .button-orange:not(:disabled):not(.disabled).active,
+.show > .button-orange.dropdown-toggle {
+  color: #fff;
+  background-color: #B45E13;
+  border-color: #a75413;
+}
+
+.button-orange:not(:disabled):not(.disabled):active:focus, .button-orange:not(:disabled):not(.disabled).active:focus,
+.show > .button-orange.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 101, 0, 0.5);
+}
+
+
+.button-grey {
+  color: #d65611;
+  background-color: #fafafa;
+  border-color: #fafafa;
+  //border-radius: 8px;
+}
+
+.button-grey:hover {
+  color: #d65611;
+  background-color: rgba(255, 101, 0, 0.54);
+  background-color: rgba(255, 101, 0, 0.54);
+}
+
+.button-grey.disabled, .button-grey:disabled {
+  color: #aeaeae;
+  background-color: #fafafa;
+  border-color: #fafafa;
+}
+
