@@ -1,6 +1,7 @@
 <template>
   <div class>
     <TheHero/>
+    <ThePlatforms/>
     <SearchInput id="learn_more"/>
     <TheSlogan/>
     <NewPosts/>

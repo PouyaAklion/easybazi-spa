@@ -151,8 +151,8 @@ export default {
       password: "",
       step: 1,
       isUsernameValid: false,
-			checkUniqueMessage: "",
-			isLogin:true,
+      checkUniqueMessage: "",
+      isLogin: true,
       message: "click to button",
       form: new Form({
         email: "",
@@ -177,12 +177,12 @@ export default {
   computed: {
     ...mapGetters({
       isShowLoginForm: "modals/isShowLoginForm"
-    }),
+    })
   },
 
   methods: {
-		 toggleLoginForm() {
-      this.isLogin = !this.isLogin
+    toggleLoginForm() {
+      this.isLogin = !this.isLogin;
     },
     ...mapMutations({
       SHOW_SING_FORM: "modals/SHOW_SING_FORM"
@@ -344,8 +344,8 @@ export default {
       //send verification code  {}
 
       this.step++;
-      $("#step-one-number").toggleClass("step-deactive");
-      $("#step-two-number").toggleClass("step-deactive");
+      // $("#step-one-number").toggleClass("step-deactive");
+      // $("#step-two-number").toggleClass("step-deactive");
     },
     checkCode() {
       if (!this.registerForm.code) {
@@ -358,8 +358,8 @@ export default {
 
       //Check Verification Code {}
 
-      $("#step-two-number").toggleClass("step-deactive");
-      $("#step-three-number").toggleClass("step-deactive");
+      // $("#step-two-number").toggleClass("step-deactive");
+      // $("#step-three-number").toggleClass("step-deactive");
       this.step++;
     },
     validEmail: function(email) {

@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import { HasError, AlertError, AlertSuccess } from 'vform'
 
 import TheChild from './TheChild';
 import TheHero from './TheHero';
@@ -7,14 +8,20 @@ import TheSlogan from './TheSlogan';
 import NewPosts from './NewPosts';
 import SignForm from './SignForm';
 import MainFooter from './MainFooter';
+import ThePlatforms from './ThePlatforms';
+
 [
-		TheChild,
-		TheHero,
-		SearchInput,
-		TheSlogan,
-		NewPosts,
-		SignForm,
-		MainFooter
+	HasError,
+	AlertError,
+	AlertSuccess,
+	TheChild,
+	TheHero,
+	SearchInput,
+	TheSlogan,
+	NewPosts,
+	SignForm,
+	MainFooter,
+	ThePlatforms,
 ].forEach(Component => {
-    Vue.component(Component.name, Component)
+	Vue.component(Component.name, Component)
 })
