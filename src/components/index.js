@@ -1,15 +1,21 @@
 import Vue from 'vue'
 import { HasError, AlertError, AlertSuccess } from 'vform'
 
-import TheChild from './TheChild';
-import TheHero from './TheHero';
-import SearchInput from './SearchInput';
-import TheSlogan from './TheSlogan';
-import NewPosts from './NewPosts';
-import SignForm from './SignForm';
-import MainFooter from './MainFooter';
-import ThePlatforms from './ThePlatforms';
+import TheChild from './site/TheChild';
+import TheHero from './site/TheHero';
+import SearchInput from './site/SearchInput';
+import TheSlogan from './site/TheSlogan';
+import NewPosts from './site/NewPosts';
+import SignForm from './site/SignForm';
+import MainFooter from './site/MainFooter';
+import ThePlatforms from './site/ThePlatforms';
+import SearchResults from './site/SearchResults';
 
+import UserInfo from './user/UserInfo'
+import UserTicket from './user/UserTicket'
+import UserItem from './user/UserItem'
+
+import AddGame from './admin/AddGame'
 [
 	HasError,
 	AlertError,
@@ -22,6 +28,11 @@ import ThePlatforms from './ThePlatforms';
 	SignForm,
 	MainFooter,
 	ThePlatforms,
+	SearchResults,
+	UserInfo,
+	UserItem,
+	UserTicket,
+	AddGame
 ].forEach(Component => {
 	Vue.component(Component.name, Component)
 })

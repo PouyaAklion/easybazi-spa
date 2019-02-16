@@ -8,7 +8,7 @@
   </div>
 </template>
 <script>
-import LoadBar from "./components/LoadBar";
+import LoadBar from "./components/site/LoadBar";
 // Load layout components dynamically.
 const requireContext = require.context("./layouts", false, /.*\.vue$/);
 

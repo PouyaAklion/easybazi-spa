@@ -126,8 +126,8 @@ export default {
 .caption-wrapper h1 {
   margin-bottom: 5px;
   color: #fff;
-  font-weight: 500;
-  font-size: 56px;
+  /* font-weight: 500; */
+  font-size: 3em;
   text-shadow: 2px 2px 2px #000;
 }
 .caption-wrapper h3 {

@@ -1,8 +1,8 @@
 <template>
   <div class="news-wrapper">
     <h4 class="mb-3 text-muted">جدید ترین اخبار بازی</h4>
-    <div v-for="section in rowCount()" :key="section" class="row mb-2">
-      <div v-for="post in getSection(section)" :key="post" class="col-md-4 mb-2">
+    <div v-for="section in rowCount()"  class="row mb-2">
+      <div v-for="post in getSection(section)"  class="col-md-4 mb-2">
         <div class="card text-white">
           <img class="card-img" v-bind:src="post.imgUrl" alt="Card image">
           <div class="card-img-overlay">

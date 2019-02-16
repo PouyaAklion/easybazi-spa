@@ -158,6 +158,9 @@ a:hover{
 }
 
 @media (max-width: 599px) {
+	.body{
+		font-size: .5em !important;
+	}
   .container-fluid {
     padding-left: 0rem !important;
     padding-right: 0rem !important;

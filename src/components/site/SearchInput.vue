@@ -6,7 +6,7 @@
                 <input  v-model="searchedText" class="form-control mr-sm-2 custom-search-input search-input-large " type="search" placeholder="جستجو..."
                        aria-label="Search">
             </form>
-            <search-result :searchString="searchedText" top="103vh" width="74vw" ></search-result>
+            <SearchResults :searchString="searchedText" top="103vh" width="74vw" />
         </div>
 
         <div class="d-flex justify-content-around flex-wrap">
@@ -18,7 +18,7 @@
                     <input v-model="searchedText" class="form-control mr-sm-2 custom-search-input " type="search" placeholder="جستجو..."
                            aria-label="Search">
                 </form>
-                <search-result :searchString="searchedText" top="105vh" width="400px" ></search-result>
+                <SearchResults :searchString="searchedText" top="105vh" width="400px" />
             </div>
             <!--<search-result :searchString="searchedText" top="800px" left="33%" width="400px" ></search-result>-->
             <a class="btn-custom">جدید ترین ها</a>
