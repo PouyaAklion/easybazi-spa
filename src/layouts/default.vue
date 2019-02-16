@@ -1,6 +1,5 @@
 <template>
     <div class="main-layout rtl">
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, omnis!
         <the-child/>
     </div>
 </template>

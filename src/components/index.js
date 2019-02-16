@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import { HasError, AlertError, AlertSuccess } from 'vform'
 
+// Site Components
+import TheNavbar from './site/TheNavbar';
+import TheCarousel from './site/TheCarousel';
 import TheChild from './site/TheChild';
 import TheHero from './site/TheHero';
 import SearchInput from './site/SearchInput';
@@ -11,15 +14,19 @@ import MainFooter from './site/MainFooter';
 import ThePlatforms from './site/ThePlatforms';
 import SearchResults from './site/SearchResults';
 
+// User Components
 import UserInfo from './user/UserInfo'
 import UserTicket from './user/UserTicket'
 import UserItem from './user/UserItem'
 
+//Admin components
 import AddGame from './admin/AddGame'
 [
 	HasError,
 	AlertError,
 	AlertSuccess,
+	TheNavbar,
+	TheCarousel,
 	TheChild,
 	TheHero,
 	SearchInput,

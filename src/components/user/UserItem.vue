@@ -4,7 +4,7 @@
     <div class="items-wrapper d-flex flex-row flex-wrap align-content-center">
       <div
         v-for="item in rentItems"
-				:key="item.game_for_rent.game_info.id"
+        :key="item.game_for_rent.game_info.id"
         @click="pushToGameRentPage(item.game_for_rent.game_info.name,item.game_for_rent.game_info.id)"
         class="item-wrapper m-3 p-1"
       >
@@ -30,7 +30,7 @@
     <div class="items-wrapper d-flex flex-row flex-wrap align-content-center">
       <div
         v-for="item in shopItems"
-				:key="item.game_for_shop.game_info.id"
+        :key="item.game_for_shop.game_info.id"
         @click="pushToGameShopPage(item.game_for_shop.game_info.name,item.game_for_shop.game_info.id)"
         class="item-wrapper m-3 p-1"
       >
