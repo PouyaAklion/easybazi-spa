@@ -1,6 +1,7 @@
 <template>
     <div class="main-layout rtl">
-        <the-child/>
+				<TheNavbar/>
+        <TheChild/>
     </div>
 </template>
 

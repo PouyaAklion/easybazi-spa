@@ -210,7 +210,7 @@ export default {
         .post("/login")
         .then(({ data }) => {
           if (data.status != 1) {
-            swal({
+            swal.fire({
               type: "error",
               title: "خطا",
               text: data.message,
@@ -232,7 +232,7 @@ export default {
           }
         })
         .catch(error => {
-          swal({
+          swal.fire({
             type: "error",
             title: "خطا در ارتباط با سرور",
             text: "اینترنت خود را چک کنید",
