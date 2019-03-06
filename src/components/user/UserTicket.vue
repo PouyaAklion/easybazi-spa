@@ -5,7 +5,7 @@
       <div class="messages-container p-3 flex-grow-1">
         <div
           v-for="ticket in tickets"
-					:key="ticket.id"
+          :key="ticket.id"
           class="message-container w-50 mt-2 p-3"
           :class="[ticket.is_user_sent==0 ? 'admin-message' :'']"
         >
@@ -41,6 +41,7 @@
 <script>
 import Form from "vform";
 import swal from "sweetalert2";
+import axios from 'axios';
 
 export default {
   name: "UserTicket",

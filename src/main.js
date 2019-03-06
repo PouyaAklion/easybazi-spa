@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './routes/'
 import store from './store/'
 import './registerServiceWorker'
-import './plugins/'
+import './plugins'
 import './components'
 
 const { config } = require('./config.js')
@@ -11,6 +11,7 @@ const { config } = require('./config.js')
 Vue.config.productionTip = false
 window.config = {}
 window.config.appName = config.appName
+window.$ = window.jQuery = require('jquery');
 new Vue({
 
 	router,

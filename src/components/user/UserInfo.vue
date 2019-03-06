@@ -46,6 +46,7 @@
 <script>
 import { mapGetters } from "vuex";
 import Form from "vform";
+import axios from 'axios';
 
 export default {
   name: "UserInfo",

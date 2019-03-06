@@ -1,9 +1,9 @@
 <template>
     <div>
-        <game-video></game-video>
-        <game-media></game-media>
+        <GameVideo></GameVideo>
+        <GameMedia></GameMedia>
 
-        <main-footer></main-footer>
+        <MainFooter></MainFooter>
 
     </div>
 </template>

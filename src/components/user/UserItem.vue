@@ -3,8 +3,8 @@
     <h5 class="mb-3">آخرین بازی هایی که تا الان کرایه کرده اید:</h5>
     <div class="items-wrapper d-flex flex-row flex-wrap align-content-center">
       <div
-        v-for="item in rentItems"
-        :key="item.game_for_rent.game_info.id"
+        v-for="(item,index) in rentItems"
+        :key="'r'+index+item.game_for_rent.game_info.id"
         @click="pushToGameRentPage(item.game_for_rent.game_info.name,item.game_for_rent.game_info.id)"
         class="item-wrapper m-3 p-1"
       >
@@ -29,8 +29,8 @@
     <h5 class="mb-3">آخرین بازی هایی که تا الان خریده اید:</h5>
     <div class="items-wrapper d-flex flex-row flex-wrap align-content-center">
       <div
-        v-for="item in shopItems"
-        :key="item.game_for_shop.game_info.id"
+        v-for="(item,index) in shopItems"
+        :key="'s'+index+item.game_for_shop.game_info.id"
         @click="pushToGameShopPage(item.game_for_shop.game_info.name,item.game_for_shop.game_info.id)"
         class="item-wrapper m-3 p-1"
       >
@@ -56,6 +56,7 @@
 
 <script>
 import swal from "sweetalert2";
+import axios from "axios";
 
 export default {
   name: "UserItem",

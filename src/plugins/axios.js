@@ -37,7 +37,7 @@ axios.interceptors.response.use(response => response, error => {
   const { status } = error.response
 
   if (status >= 500) {
-      swal({
+      swal.fire({
           type: 'error',
           title: 'خطا',
           text: 'مشکل در برقراری ارتباط با سرور',
@@ -48,7 +48,7 @@ axios.interceptors.response.use(response => response, error => {
   }
 
   if (status === 401 && store.getters['auth/check']) {
-      swal({
+      swal.fire({
           type: 'error',
           title: 'خطا',
           text: 'مشکل در برقراری ارتباط با سرور',

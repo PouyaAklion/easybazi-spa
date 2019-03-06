@@ -13,6 +13,12 @@ import SignForm from './site/SignForm';
 import MainFooter from './site/MainFooter';
 import ThePlatforms from './site/ThePlatforms';
 import SearchResults from './site/SearchResults';
+import SwiperSlider from './site/SwiperSlider';
+import GameVideo from './site/GameVideo';
+import GameMedia from './site/GameMedia';
+import GameComments from './site/GameComments';
+import GameNavbar from './site/GameNavbar';
+import RelatedSwiper from './site/RelatedSwiper';
 
 // User Components
 import UserInfo from './user/UserInfo'
@@ -39,7 +45,13 @@ import AddGame from './admin/AddGame'
 	UserInfo,
 	UserItem,
 	UserTicket,
-	AddGame
+	AddGame,
+	SwiperSlider,
+	GameMedia,
+	GameVideo,
+	GameComments,
+	GameNavbar,
+	RelatedSwiper
 ].forEach(Component => {
 	Vue.component(Component.name, Component)
 })
